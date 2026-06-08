@@ -1,0 +1,79 @@
+<style>
+  .mode-landscape .sl-found-layout {
+    flex-direction: row;
+    padding: 3rem;
+    gap: 2.5rem;
+  }
+  .mode-portrait .sl-found-layout {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .mode-landscape .sl-found-left {
+    width: 58%;
+  }
+  .mode-portrait .sl-found-left {
+    width: 100%;
+  }
+  .mode-landscape .sl-found-right {
+    width: 42%;
+    height: 100%;
+  }
+  .mode-portrait .sl-found-right {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+  }
+  .mode-landscape .sl-found-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .mode-portrait .sl-found-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.75rem;
+  }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-found-layout flex items-stretch h-full">
+    <!-- Left: narrative -->
+    <div class="sl-found-left flex flex-col justify-center gap-8">
+      <!-- The Problem -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-block w-2.5 h-2.5 rounded-full" style="background:#DC2626;"></span>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#DC2626;">The Problem</span>
+        </div>
+        <h2 class="text-2xl font-bold leading-snug" style="color:#0f172a;">
+          Paper logs lose pages. Whiteboards get erased. Texts go unanswered.
+        </h2>
+        <p class="mt-3 text-base leading-relaxed" style="color:#475569;max-width:32rem;">
+          When a boarding facility relies on scattered manual systems, missed feedings and skipped medications become inevitable. One slip can harm an animal — and shatter an owner's trust overnight.
+        </p>
+      </div>
+      <!-- The Solution -->
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="inline-block w-2.5 h-2.5 rounded-full" style="background:#0F766E;"></span>
+          <span class="text-xs font-bold tracking-widest uppercase" style="color:#0F766E;">The Solution</span>
+        </div>
+        <h2 class="text-2xl font-bold leading-snug" style="color:#0f172a;">
+          One dashboard. Every pet, every task, every update — accounted for.
+        </h2>
+        <p class="mt-3 text-base leading-relaxed" style="color:#475569;max-width:32rem;">
+          PawWatch centralizes check-ins, feeding plans, medication logs, and pickup coordination into a single system. Staff know exactly what to do; managers see everything at a glance; owners get proactive updates instead of anxious silence.
+        </p>
+      </div>
+    </div>
+    <!-- Right: visual -->
+    <div class="sl-found-right">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=A%20caring%20kennel%20attendant%20gently%20feeding%20a%20small%20dog%20in%20a%20clean%20modern%20pet%20boarding%20facility%2C%20soft%20natural%20light%2C%20warm%20teal%20and%20amber%20tones%2C%20editorial%20style%20photography"
+        alt="Kennel attendant caring for a pet in a modern boarding facility"
+      />
+    </div>
+  </div>
+</section>
