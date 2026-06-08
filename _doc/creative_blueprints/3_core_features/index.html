@@ -1,0 +1,99 @@
+<style>
+  .mode-landscape .sl-feat-layout {
+    padding: 2.5rem 3rem;
+  }
+  .mode-portrait .sl-feat-layout {
+    padding: 2rem;
+  }
+  .mode-landscape .sl-feat-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .mode-portrait .sl-feat-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-feat-layout flex flex-col h-full">
+    <!-- Header -->
+    <div class="mb-2">
+      <span class="text-xs font-bold tracking-widest uppercase" style="color:#0F766E;">Core Features</span>
+    </div>
+    <!-- Persona chips -->
+    <div class="flex flex-wrap gap-2 mb-5">
+      <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold text-white" style="background:#0F766E;">
+        Facility Manager
+      </span>
+      <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold border" style="color:#334155;border-color:#cbd5e1;">
+        Kennel Attendant
+      </span>
+      <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold border" style="color:#334155;border-color:#cbd5e1;">
+        Pet Owner
+      </span>
+    </div>
+    <!-- Feature cards grid -->
+    <div class="sl-feat-grid grid flex-1 min-h-0">
+      <!-- Check-In Management -->
+      <div class="rounded-xl p-5 flex flex-col" style="background:#f0fdfa;border:1px solid #ccfbf1;">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg text-white text-sm font-bold" style="background:#0F766E;">1</span>
+          <h3 class="text-base font-bold" style="color:#0f172a;">Check-In Management</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Digital intake with pet profiles — breed, allergies, temperament, emergency contacts, vet info — plus kennel assignment and photo capture at drop-off.
+        </p>
+      </div>
+      <!-- Feeding Schedules -->
+      <div class="rounded-xl p-5 flex flex-col" style="background:#fffbeb;border:1px solid #fef3c7;">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg text-white text-sm font-bold" style="background:#D97706;">2</span>
+          <h3 class="text-base font-bold" style="color:#0f172a;">Feeding Schedules</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Per-pet feeding plans with dietary restrictions, portion sizes, and timing. Staff see shift-based task lists; completed feedings are logged with timestamps.
+        </p>
+      </div>
+      <!-- Medication Tracking -->
+      <div class="rounded-xl p-5 flex flex-col" style="background:#eff6ff;border:1px solid #dbeafe;">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg text-white text-sm font-bold" style="background:#1E40AF;">3</span>
+          <h3 class="text-base font-bold" style="color:#0f172a;">Medication Tracking</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Medication records with dosage, frequency, and administration windows. Staff confirm each dose; missed-dose alerts escalate to the facility manager.
+        </p>
+      </div>
+      <!-- Pickup Coordination -->
+      <div class="rounded-xl p-5 flex flex-col" style="background:#f0fdfa;border:1px solid #ccfbf1;">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg text-white text-sm font-bold" style="background:#0F766E;">4</span>
+          <h3 class="text-base font-bold" style="color:#0f172a;">Pickup Coordination</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Scheduled pickup times, owner arrival notifications, checkout checklists for belongings and health summaries, and end-of-stay billing.
+        </p>
+      </div>
+      <!-- Owner Updates -->
+      <div class="rounded-xl p-5 flex flex-col" style="background:#fffbeb;border:1px solid #fef3c7;">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg text-white text-sm font-bold" style="background:#D97706;">5</span>
+          <h3 class="text-base font-bold" style="color:#0f172a;">Owner Updates</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Automated daily report cards, real-time photo sharing, and push notifications for key events — checked in, medication given, ready for pickup.
+        </p>
+      </div>
+      <!-- Auditability -->
+      <div class="rounded-xl p-5 flex flex-col" style="background:#eff6ff;border:1px solid #dbeafe;">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="flex items-center justify-center w-8 h-8 rounded-lg text-white text-sm font-bold" style="background:#1E40AF;">6</span>
+          <h3 class="text-base font-bold" style="color:#0f172a;">Complete Care Logs</h3>
+        </div>
+        <p class="text-sm leading-relaxed" style="color:#475569;">
+          Every action timestamped and attributed. Full care records protect the facility from liability and give owners transparent proof of service.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
